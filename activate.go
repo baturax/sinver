@@ -18,7 +18,7 @@ func activate(app *gtk.Application) {
 	mBox := gtk.Box(mainBox())
 	tBox := gtk.Box(topBox())
 	cBox := gtk.Box(centerBox())
-	bBox := gtk.Box(bottomBox(&gtk.Window{}))
+	bBox := bottomBox(window)
 
 
 	// append

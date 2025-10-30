@@ -2,7 +2,7 @@ package main
 
 import "github.com/diamondburned/gotk4/pkg/gtk/v4"
 
-func bottomBox(window *gtk.Window) gtk.Box {
+func bottomBox(window *gtk.ApplicationWindow) gtk.Box {
 	boxx := gtk.NewBox(gtk.OrientationVertical, 5)
 
 	firstlabel := gtk.NewLabel("This product is licensed under  to:")
@@ -13,7 +13,9 @@ func bottomBox(window *gtk.Window) gtk.Box {
 
 	okButton := gtk.NewButtonWithLabel("OK")
 	okButton.SetHAlign(gtk.AlignEnd)
-	okButton.ConnectClicked(window.Close)
+	okButton.ConnectClicked(func() {
+		window.Application().Quit()
+	})
 
 	labbels(firstlabel)
 	labbels(secondLabel)
