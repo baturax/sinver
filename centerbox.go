@@ -14,7 +14,7 @@ func centerBox() gtk.Box {
 	thirdLabel := gtk.NewLabel("© Linux. All rights reversed")
 	thirdLabel.SetMarginBottom(5)
 
-	fourthLabel := gtk.NewLabel("The"+ getDistro() +" operating system and its user interface are protected by trademark and other pending or existing intellectual property rights in the United States and other countries/regions.")
+	fourthLabel := gtk.NewLabel("The "+ getDistro() +" operating system and its user interface are protected by trademark and other pending or existing intellectual property rights in the United States and other countries/regions.")
 
 	labbels(firstLabel)
 	labbels(secondLabel)

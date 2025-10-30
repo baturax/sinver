@@ -8,7 +8,7 @@ func bottomBox(window *gtk.Window) gtk.Box {
 	firstlabel := gtk.NewLabel("This product is licensed under  to:")
 	firstlabel.SetMarkup("This product is licensed under <a href='https://www.gnu.org/licenses/gpl-3.0.en.html'>GNU General Public License</a> to:")
 
-	secondLabel := gtk.NewLabel(getUser())
+	secondLabel := gtk.NewLabel("kesp")
 	secondLabel.SetMarginStart(30)
 
 	okButton := gtk.NewButtonWithLabel("OK")
